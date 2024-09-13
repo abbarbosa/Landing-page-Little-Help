@@ -1,0 +1,267 @@
+:root {
+    --roxo-escuro: #150b26;
+    --preto: #262626;
+    --degrade-01: linear-gradient(-90deg, #6e24bf, #ff6201);
+    --degrade-02: linear-gradient(90deg, #6e24bf, #ff6201);
+    --font-lh: "Dongle", sans-serif;
+}
+
+body {
+    background-color: var(--roxo-escuro);
+    font-family: var(--font-lh);
+    color: white;
+
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.titulos {
+    font-size: 96px;
+    text-align: center;
+    line-height: 60px;
+}
+
+.degrade1 {
+    background: var(--degrade-01);
+    /* Define o fundo do elemento com o gradiente linear definido na variável CSS --degrade-01 */
+    background-clip: border-box;
+    /* Define que o fundo deve se estender até a borda do contêiner (útil para garantir que o gradiente cubra todo o elemento) */
+    -webkit-background-clip: text;
+    /* Faz com que o fundo do elemento (gradiente) seja aplicado apenas ao texto dentro do elemento. Isso é específico para WebKit, como no Chrome e Safari */
+    -webkit-text-fill-color: transparent;
+    /* Torna a cor do texto transparente, permitindo que o fundo gradiente (aplicado via -webkit-background-clip) seja visível através do texto */
+}
+
+.degrade2 {
+    background: var(--degrade-02);
+    background-clip: border-box;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+/* sobre a little help */
+
+.banner {
+    justify-content: center;
+    display: flex;
+    width: 100%;
+}
+
+.fa-quote-left {
+    font-size: 128px;
+}
+
+.conteudo-lh {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+}
+
+.textos-informativos {
+    font-size: 60px;
+    line-height: 50px
+}
+
+.textos-informativos2 {
+    font-size: 150px;
+}
+
+.textos-informativos3 {
+    font-size: 60px;
+    line-height: 50px;
+    margin-top: -200px;
+}
+
+.assinatura {
+    width: 356px;
+}
+
+.dados {
+    justify-content: center;
+    display: flex;
+    gap: 50px;
+}
+
+/* serviços */
+
+.fileira-card {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    text-align: center;
+}
+
+.card {
+    background-color: white;
+    width: 300px;
+    margin: 25px;
+    padding: 25px;
+    border-radius: 25px;
+    color: var(--preto);
+    font-size: 2em;
+    line-height: 1em;
+    box-shadow: 0px 0px 50px 0px #6e24bf;
+    text-align: center;
+}
+
+.button-card {
+    border: 3px solid #128c7e;
+    border-radius: 50px;
+    background-color: white;
+    font-size: 36px;
+    padding: 7px 14px;
+    font-family: var(--font-lh);
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    gap: 10px;
+    text-decoration: none;
+    color: var(--preto);
+}
+
+.button-card a {
+    text-decoration: none;
+    /* Remove a decoração do texto dos links dentro do botão */
+    color: var(--preto);
+    /* Garante que a cor do texto seja a mesma do botão */
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    gap: 10px;
+}
+
+.fa-whatsapp {
+    color: #128c7e;
+}
+
+.textos-informativos-card {
+    width: 350px;
+    font-size: 60px;
+    line-height: 50px;
+    margin-bottom: 100px;
+}
+
+.icon-card {
+    width: 100px;
+    margin-top: 30px;
+}
+
+.tittle-card {
+    font-size: 36px;
+}
+
+/*contato */
+
+.section-contato {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+}
+
+.card-infos {
+    height: 180px;
+    width: 500px;
+    border-radius: 50px;
+    background-color: white;
+    margin: 20px;
+}
+
+.input-wrapper {
+    position: relative;
+    width: 590px; /* Ajuste a largura conforme necessário */
+    margin-top: 20px;
+}
+
+.input-wrapper .input-icon {
+    position: absolute;
+    top: 50%;
+    left: 15px; /* Ajuste o valor conforme necessário */
+    transform: translateY(-50%);
+    color: white; /* Cor do ícone */
+    font-size: 25px; /* Ajuste o tamanho do ícone conforme necessário */
+}
+
+.card-contato {
+    padding-left: 50px; /* Deixe espaço suficiente para o ícone */
+    height: 75px;
+    width: 100%;
+    border: 2px solid transparent;
+    background-color: transparent;
+    border-color: white;
+    border-radius: 50px;
+    color: white;
+    font-size: 25px;
+}
+
+
+/* .card-contato {
+    height: 75px;
+    width: 590px;
+    margin-top: 20px;
+    border: 2px solid transparent;
+    background-color: transparent;
+    border-color: white;
+    border-radius: 50px;
+    color: white;
+    font-size: 25px;
+} */
+
+/* Estilizando o placeholder dos campos de entrada e áreas de texto */
+input::placeholder,
+textarea::placeholder {
+    color: white;
+    /* Cor do texto do placeholder */
+    font-size: 40px;
+    font-family: var(--font-lh);
+    text-align: center;
+}
+
+
+.card-contato-mensagem {
+    height: 160px;
+    width: 590px;
+    margin-top: 20px;
+    border: 2px solid transparent;
+    background-color: transparent;
+    border-color: white;
+    border-radius: 50px;
+    color: white;
+    font-size: 25px;
+}
+
+.button-enviar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 75px;
+    width: 590px;
+    border-radius: 50px;
+    margin-top: 20px;
+    background: linear-gradient(to right, #6e24bf, #ff6201);
+    border: none; /* Remove qualquer borda padrão */
+    cursor: pointer; /* Adiciona o cursor pointer para indicar que o botão é clicável */
+    transition: background 0.3s ease; /* Transição suave para a cor de fundo */
+}
+
+.texto-button-enviar {
+    font-size: 20px;
+    color: white;
+    margin-left: 10px; /* Espaço entre o ícone e o texto */
+    display: flex;
+    align-items: center; /* Garante que o texto esteja alinhado verticalmente */
+}
+
+
+
+
+.footer {
+    text-align: center;
+    font-size: 50px;
+}
